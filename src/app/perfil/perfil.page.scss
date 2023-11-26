@@ -1,0 +1,53 @@
+ion-content{
+    
+    --background: #F6F6E9;
+    --color:#7B3911;
+    font-family: 'Amaranth', sans-serif;
+}
+
+ion-tabs ion-tab-bar{
+    
+    --background: #F6F6E9;
+    --color:#7B3911;
+    font-family: 'Amaranth', sans-serif;
+}
+
+ion-hearder ion-toolbar ion-grid, ion-title{
+    
+    --background: #F6F6E9;
+    --color:#7B3911;
+   font-family: 'Amaranth', sans-serif;
+   font-size: 35px;
+   
+}
+
+ .exit ion-button, ion-icon{
+   --background:#1D7151;
+   display: flex;
+   justify-content: flex-start;
+   
+
+}
+.perfil ion-icon{
+    color:#EBA327;
+    font-size: 100px;
+    display: flex;
+    justify-content: flex-start;
+    padding: 85px 25px; 
+   
+
+}
+
+ion-content .portada{
+    display: block;
+    position: absolute;
+    padding: 30px 15px;
+
+}
+
+ .alerta {
+    --background:#1D7151;
+   
+
+}
+

@@ -1,0 +1,54 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Protesis</ion-title>
+    <ion-button [routerLink]="['/perfil']" shape="round" fill="outline" id="bot_atras" slot="end">
+      <ion-icon slot="icon-only" name="chevron-back-circle"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+<ion-card>
+  <img src="assets/img/descarga (7).jpg" alt="">
+  <ion-card-header>
+    <ion-card-title>Joshua Hernandes</ion-card-title>
+    <ion-card-subtitle>Diseñador de protesis de control corporal</ion-card-subtitle>
+  </ion-card-header>
+
+  <ion-card-content>
+    Los protésicos desempeñan un papel crucial en mejorar la calidad de vida de las personas que han experimentado la pérdida de extremidades, proporcionando soluciones personalizadas que les permiten recuperar 
+    funciones y llevar a cabo actividades cotidianas por lo cual me he dado la labor de diseñar y modificar proptesis para que todos los que lo necesiten se sientan bien cons sus protesis .
+  </ion-card-content>
+  <ion-button>contactar  </ion-button>
+</ion-card>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button [routerLink]="['/foro']">
+          <ion-icon name="megaphone-outline"></ion-icon>
+          Foro
+        </ion-tab-button>
+        <ion-tab-button [routerLink]="['/empresas']">
+          <ion-icon name="people-outline"></ion-icon>
+          Empresas
+        </ion-tab-button>
+        <ion-tab-button [routerLink]="['/para-ti']">
+          <ion-icon name="flame"></ion-icon>
+          Para ti
+        </ion-tab-button>
+        <ion-tab-button [routerLink]="['/perfil']">
+          <ion-icon name="person-circle-outline"></ion-icon>
+          Perfil
+        </ion-tab-button>
+        <ion-tab-button [routerLink]="['/crear']">
+          <ion-icon name="construct-outline"></ion-icon>
+          Crear
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+    
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,92 @@
+<app-header></app-header>
+
+<ion-content >
+  <ion-title class="titulo">
+    Empresas Asociadas
+  </ion-title>
+
+  <ion-list lines="inset">
+    <ion-item>
+      <ion-label></ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-col >
+      <img src="/assets/img/fundacin_prtesis_3d_logo.jpg" alt="">
+      </ion-col>
+      <ion-col >
+        <ion-label>Fundacion protesisis 3D</ion-label>
+      </ion-col>
+      <ion-col push="1">
+        <ion-button><ion-icon name="chatbubbles-outline"></ion-icon> </ion-button>
+      </ion-col>
+    </ion-item>
+    <ion-item>
+      <ion-col>
+        <img src="/assets/img/prosaludchile-logo.jpeg" alt="">
+        </ion-col>
+        <ion-col push="-1">
+          <ion-label>Pro salud Chile</ion-label>
+        </ion-col>
+        <ion-col push="2">
+          <ion-button><ion-icon name="chatbubbles-outline"></ion-icon> </ion-button>
+        </ion-col>
+    </ion-item>
+    <ion-item>
+      <ion-col>
+        <img src="/assets/img/logo_digital_pixed.png" alt="">
+        </ion-col>
+        <ion-col push="-1">
+          <ion-label>Pixed Corp</ion-label>
+        </ion-col>
+        <ion-col push="2">
+          <ion-button><ion-icon name="chatbubbles-outline"></ion-icon> </ion-button>
+        </ion-col>
+    </ion-item>
+    <ion-item>
+      <ion-col>
+        <img src="/assets/img/images.png" alt="">
+        </ion-col>
+        <ion-col  push="-1">
+          <ion-label>Take a hand</ion-label>
+        </ion-col>
+        <ion-col push="2">
+          <ion-button><ion-icon name="chatbubbles-outline"></ion-icon> </ion-button>
+        </ion-col>
+    </ion-item>
+    
+    
+  </ion-list>
+  
+</ion-content>
+
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button [routerLink]="['/foro']">
+          <ion-icon name="megaphone-outline"></ion-icon>
+          Foro
+        </ion-tab-button>
+        <ion-tab-button [routerLink]="['/empresas']">
+          <ion-icon name="people-outline"></ion-icon>
+          Empresas
+        </ion-tab-button>
+        <ion-tab-button [routerLink]="['/para-ti']">
+          <ion-icon name="flame"></ion-icon>
+          Para ti
+        </ion-tab-button>
+        <ion-tab-button [routerLink]="['/perfil']">
+          <ion-icon name="person-circle-outline"></ion-icon>
+          Perfil
+        </ion-tab-button>
+        <ion-tab-button [routerLink]="['/crear']">
+          <ion-icon name="construct-outline"></ion-icon>
+          Crear
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+    
+  </ion-toolbar>
+  </ion-footer>
+  

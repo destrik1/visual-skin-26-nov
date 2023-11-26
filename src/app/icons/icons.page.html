@@ -1,0 +1,60 @@
+<ion-header [translucent]="true" color="warning">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title id="titulo">Perfil</ion-title>
+    <ion-button [routerLink]="['/perfil']" shape="round" fill="outline" id="bot_atras" slot="end">
+      <ion-icon slot="icon-only" name="chevron-back-circle"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+  <ion-avatar style="margin-left: 0.5cm; width: 60px; height: 60px;">
+    <img [src]="selectedAvatar ? selectedAvatar : 'assets/icon/default-img.jpg'" alt="Selected Avatar">
+  </ion-avatar>
+
+
+<ion-content>
+  <ion-grid color="dark">
+    <ion-row *ngFor="let chunk of chunkedCharacters">
+      <ion-col size="6" *ngFor="let character of chunk">
+        <ion-button color="dark"  (click)="setProfilePicture(character.image)">
+          <ion-avatar slot="start">
+            <img [src]="character.image" alt="">
+          </ion-avatar>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button [routerLink]="['/foro']">
+          <ion-icon name="megaphone-outline"></ion-icon>
+          Foro
+        </ion-tab-button>
+        <ion-tab-button [routerLink]="['/empresas']">
+          <ion-icon name="people-outline"></ion-icon>
+          Empresas
+        </ion-tab-button>
+        <ion-tab-button [routerLink]="['/para-ti']">
+          <ion-icon name="flame"></ion-icon>
+          Para ti
+        </ion-tab-button>
+        <ion-tab-button [routerLink]="['/perfil']">
+          <ion-icon name="person-circle-outline"></ion-icon>
+          Perfil
+        </ion-tab-button>
+        <ion-tab-button [routerLink]="['/crear']">
+          <ion-icon name="construct-outline"></ion-icon>
+          Crear
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+    
+  </ion-toolbar>
+</ion-footer>

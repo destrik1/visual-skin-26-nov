@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Amaranth&family=Poppins:wght@300&family=Tilt+Neon&display=swap');
+
+ion-content{
+    
+    --background: #F6F6E9;
+    --color:#7B3911;
+    font-family: 'Amaranth', sans-serif;
+}
+
+ion-tabs,ion-tab-bar{
+    
+    --background: #F6F6E9;
+    --color:#7B3911;
+    font-family: 'Amaranth', sans-serif;
+}
+
+ion-item, ion-list, ion-label{
+    
+    --background: #F6F6E9;
+    --color:#7B3911;
+    font-family: 'Amaranth', sans-serif;
+}
+
+ion-content .titulo{
+    padding-top: 18px;
+    --color:#7B3911;
+    font-family: 'Amaranth', sans-serif;
+    font-size: 22px;
+}
+
+ion-list ion-item {
+
+    --color:#7B3911;
+    font-family: 'Amaranth', sans-serif;
+    font-size: 14px;
+}
+ img{
+
+    width: 50px;
+ 
+}
